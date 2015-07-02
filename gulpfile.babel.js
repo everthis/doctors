@@ -30,7 +30,7 @@ gulp.task('styles', () => {
       console.log(error);
       this.emit('end');
     })
-    .pipe($.autoprefixer({browsers: ['last 1 version']}))
+    .pipe($.autoprefixer({browsers: ['last 2 version']}))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe($.inject(sources))
