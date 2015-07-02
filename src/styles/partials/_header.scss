@@ -1,0 +1,19 @@
+header {
+	position: relative;
+	background-color: $header-bg;
+	@include inline-block-fix(span);
+	span {
+		@extend %font-size-reset;
+		text-align: center;
+		padding: 0.4rem;
+	}
+	.back {
+		width: 25%;
+	}
+	.page-title {
+		width: 50%;
+	}
+	.user-center {
+		width: 25%;
+	}
+}

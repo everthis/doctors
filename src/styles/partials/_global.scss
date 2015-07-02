@@ -1,0 +1,24 @@
+html, body {
+	height: 100%;
+	background-color: #ddd;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hide {
+    display: none !important;
+}
+
+.ellipsis {
+    overflow: hidden;        /* 1 */
+    white-space: nowrap;     /* 2 */
+    text-overflow: ellipsis; /* 3 */
+}
+
+.opacity-transition {
+	transition: opacity 1s linear 0;
+}

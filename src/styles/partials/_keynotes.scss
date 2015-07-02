@@ -1,0 +1,16 @@
+.keynotes {
+
+	width: 100%;
+	text-align: center;
+	#slider {
+	    opacity:1;
+	    transition: opacity 1s ease-in-out; 
+	    width: 95%;
+	}
+
+	#slider.fadeOut {
+	    opacity:0;
+	}
+
+}
+

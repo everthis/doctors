@@ -1,0 +1,94 @@
+html {
+    width: 100%;
+}
+
+.grid > div,.grid-thin > div,.grid-fat > div {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+div[class^="col-"] > div {
+    margin-top: 0.04rem;
+}
+
+.grid>div {
+    background-color: rgba(242,234,255,0.8);
+    background-color: rgba(96,125,255,0.85);
+}
+.grid-thin>div {
+    background-color: rgba(241,149,36,0.85);
+}
+.grid-fat>div {
+    background-color: rgba(228,80,66,0.85);
+    outline: 1px dashed #333;
+}
+.grid-fat-wrap .bg>div {
+    outline: 1px solid #fff;
+}
+.grid-thin-wrap, .grid-wrap, .grid-fat-wrap {
+    position: relative;
+    background-color: rgba(241,149,36, 0.2);
+    background-color: rgba(0,0,0, 0.05);
+    padding-top: 0.4rem;
+}
+
+.grid-thin-wrap .bg,.grid-wrap .bg,.grid-fat-wrap .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.grid-thin-wrap .bg > div[class^="col-"],
+.grid-wrap .bg > div[class^="col-"],
+.grid-fat-wrap .bg > div[class^="col-"]{
+    height: 14.7rem;
+}
+
+.grid-thin-wrap .bg>div,
+.grid-wrap .bg>div,
+.grid-fat-wrap .bg>div{
+    background-color: rgba(0,0,0, 0.15);
+}
+
+.global button{
+    width: 3.2rem;
+    padding: 0.1rem 0;
+    margin: 0.1rem;
+    font-size: inherit;
+}
+
+.grid-config {
+    margin-bottom: 0.2rem;
+}
+
+.grid-config label{
+    display: inline-block;
+    padding: 0.4rem 0;
+    width: 5rem;
+    text-align: right;
+    font-size: inherit;
+}
+
+.grid-config input {
+    display: inline-block;
+    font-size: inherit;
+}
+
+.grid-config button {
+    display: block;
+    width: 2rem;
+    padding: 0.1rem;
+    font-size: inherit;
+    margin: auto;
+}
+
+[data-dpr="1"] .grid-config, [data-dpr="1"] .global{
+    font-size: 12px;
+}
+[data-dpr="2"] .grid-config, [data-dpr="2"] .global{
+    font-size: 24px;
+}
+[data-dpr="3"] .grid-config, [data-dpr="3"] .global{
+    font-size: 36px;
+}
